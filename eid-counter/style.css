@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+body {
+    background-image: url(https://static.vecteezy.com/system/resources/previews/007/233/269/non_2x/islamic-background-design-ramadan-background-eid-mubarak-background-free-vector.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    background-color: hsl(0, 20%, 22%);
+}
+
+#main{
+    display: flex;
+    flex-direction: column;
+    padding: 100px;
+    align-items: center;
+    gap: 10px;
+
+}
+
+#logo{
+    font-size: 5rem;
+    color: white;
+    text-shadow: 2px 2px 5px black;
+    font-family: Pacifico;
+}
+
+#main > h3 {
+    font-size: 3rem;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    text-shadow: 2px 2px 5px black;
+}
+#time-continer {
+    margin-top: 50px;
+    padding: 20px 40px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    font-size: 3rem;
+    font-weight: 500;
+    
+    background: rgba(255, 255, 255, 0.15); /* More transparency */
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 
+        inset 5px 5px 10px rgba(255, 255, 255, 0.2), /* Inner glow */
+        5px 5px 15px rgba(0, 0, 0, 0.2); /* Soft shadow */
+
+    backdrop-filter: blur(25px);
+    -webkit-backdrop-filter: blur(25px);
+    overflow: hidden;
+}
+
+.box{
+    color: rgb(30, 30, 30);
+    padding: px;
+    text-align: center;
+}
+
+.box > P{
+    font-size: 1.1rem;
+    text-align: center;
+}
+
+/* Gradient Overlay for depth */
+#time-continer::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.1));
+    border-radius: inherit;
+    pointer-events: none;
+}
+
+
+.lines{
+    padding-bottom: 30px;
+}
